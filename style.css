@@ -1,0 +1,389 @@
+html,body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #fff9e3;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header{
+    background: black;
+    height: 95px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+
+header .logo{
+    float: left;
+}
+
+header .logo-text{
+    font: bold;
+    font-size: 60px;
+    margin: 20px;
+    
+}
+
+header .logo-text span{
+    color:#f87e45;
+}
+
+header ul{
+    font-size: 25px;
+    float: right;
+    margin: 5px;
+    padding: 30px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    margin-right: 20px;
+}
+
+header ul li a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #f87e45;
+}
+
+header *{
+    color: white;
+}
+
+/*Post slider*/
+ .post-slider{
+     position: relative;
+ }
+
+ .post-slider .slider-title{
+     text-align: center;
+     margin: 30px auto;
+     color: black;
+ }
+
+ .post-slider .slider-title span{
+     color: #f87e45;
+ }
+
+ .post-slider .next{
+    position:absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color:#f87e45;
+    cursor: pointer;
+ }
+
+ .post-slider .prev{
+    position:absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #f87e45;
+    cursor: pointer;
+ }
+
+ .post-slider .post-wrapper{
+     width: 84%;
+     height: 350px;
+     padding: 10px 0px 10px 0px; 
+     overflow: hidden;
+     margin: auto;
+     border-radius: 10px;
+ }
+
+ .post-slider .post-wrapper .post {
+    height: 350px;
+    width: 280px;
+    display: inline-block;
+    background: #28231d;
+    margin: 0px 10px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #fff9e3; 
+    outline-style: solid;
+    outline-width: 20px;
+    outline-color: #fff9e3;
+}
+
+ .post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 20px;
+    border: 1px saddlebrown;
+    color: #f87e45;
+ }
+
+ .post-slider .post-wrapper .post .post-info h4 {
+    font-size: 8px; 
+    height: 48px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 24px; 
+}
+
+.post-slider .post-wrapper .post .post-info h4 a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+}
+
+ .post-slider .post-wrapper .post .post-info h4 a:hover{
+    color: #f87e45;
+ }
+
+ .post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+ }
+
+ .content{
+     flex-grow: 1;
+     margin-bottom: 10px; 
+     width: 90%;
+     margin: 30px 65px 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .content .main-content{
+     width: 70%;
+     float: left;
+     padding-left: 0px; 
+ }
+
+ .content .main-content.single{
+    margin-top: 2px;
+    background: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    border: 1px solid #faf5ef; 
+    outline-style: solid;
+    outline-width: 20px;
+    outline-color: #faf5ef;
+    box-shadow: 10px;
+}
+
+ 
+ .content .main-content .post{
+    width: 100%;
+    height: 270px;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: #28231d;
+    position: relative;
+    border: 1px solid #fff9e3; 
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: #fff9e3;
+    color: white;
+ }
+
+ .content .main-content .post .read-more{
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+ }
+
+ .content .main-content .post .post-preview {
+    margin-left: 20px; 
+    float: left;
+    width: calc(60% - 20px); 
+}
+
+.content .main-content .post-preview a{
+    color: white;
+}
+
+.content .main-content .post-preview h1 a:hover {
+    color: #f87e45;
+}
+
+.content .main-content .post-preview i{
+    color:#f87e45 ;
+}
+ .content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-radius: 10px;
+ }
+
+ .content .main-content .recent-post-title {
+    margin-left: 30px; 
+    color: #f87e45;
+    text-align: center;
+}
+
+.content .main-content .recent-post-title span{
+color: black;
+}
+
+/*flashcards*/
+.flashcards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.flashcards-title {
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #f87e45;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.flashcards-title span{
+    color: black;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.flashcard {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #faf5ef; /* Background color for the flashcard */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    transition: transform 0.3s ease-in-out;
+    height: 250px;
+}
+
+.flashcard:hover {
+    transform: scale(1.05); /* Scale up on hover for an interactive effect */
+}
+
+/*Footer*/
+.footer{
+    margin-top: 100px;
+    background: black;
+    color:black;
+    height: 320px;
+    position: relative;
+}
+
+.footer .footer-content{
+    height: 280px;
+    display: flex;
+    color: white;
+}
+
+.footer .footer-bottom{
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+}
+
+.footer .footer-content .about h1{
+    color: white;
+    
+}
+
+.footer .footer-content .about h1 span{
+    color: #f87e45;
+}
+
+.footer .footer-content .about .contact span{
+     display:block;
+     margin: 3px;
+     font-size:1.1em;
+     margin-bottom: 2px;
+     color: white;
+}
+
+.footer .footer-content .about .socials{
+    margin-top: 20px; 
+    display: flex; 
+    align-items: center; 
+    gap: 40px;
+    color: white;
+}
+
+.footer .footer-content .about .socials a {
+    color: black; 
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-content .about .socials a:hover{
+    color: #f87e45;
+}
+
+.footer .footer-content .about .socials i {
+    font-size: 1.3em; 
+}
+
+ /*Media queries*/
+@media only screen and (max-width: 750px){
+    header ul{
+        width: 100%;
+        background: #008489;
+        padding: 0%;
+        margin:0%;
+    }
+}
+
+/* ReadMore Button*/
+.btn{
+    font-size: small;
+    padding: .5rem 1rem;
+    background: blue;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background: rgb(1, 1, 98);
+}
+
+/*Text Box*/
+.text-box {
+    border: 1px solid #000; /* Adds a border to the box */
+    padding: 10px;         /* Adds space inside the box around the text */
+    margin: 10px 0;        /* Adds space outside the box */
+    background-color: white; /* Sets a background color for the box */
+    width: auto;          /* Sets the width of the box */
+}
