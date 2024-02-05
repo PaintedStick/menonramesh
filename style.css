@@ -364,42 +364,58 @@ color: black;
         margin:0%;
     }
 }
-/* Adjustments for larger screens */
-@media only screen and (min-width: 992px) {
-  .post, .flashcard, .content , .footer {
-    width: 100%; /* Ensure full width */
-    /* Adjust padding and margin as necessary */
-  }
+
+
+@media only screen and (max-width: 750px){
+    header {
+        height: 60px; /* Reduce the height on smaller screens */
+    }
+    header .logo-text {
+        font-size: 30px; /* Adjust the logo text size for smaller screens */
+        margin: 10px; /* Adjust margin to center the logo text vertically */
+    }
+    header ul {
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
 }
-
-
-/* styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
+@media only screen and (max-width: 750px){
+    .post-slider .slider-title {
+        margin-top: 70px; /* Add more space on top to avoid overlapping with the header */
+    }
 }
-
-/* Enhancements for mobile readability */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 14px; /* Increase base font size for better readability */
-  }
-  .post, .flashcard, .content, .footer {
-    /* Ensure elements are not too wide or too narrow */
-    width: auto; /* Adjust width to fit mobile screens */
-    margin: 10px 5px; /* Adjust margins to fit smaller screens */
-    padding: 10px; /* Ensure padding does not squeeze content too much */
-  }
-  /* Increase touch targets for links and buttons */
-  a, .btn {
-    padding: 15px; /* Larger padding for easier tapping */
-    font-size: larger; /* Larger text for better visibility */
-  }
+@media only screen and (max-width: 750px){
+    header ul {
+        position: absolute;
+        top: 60px; /* Adjust based on the new header size */
+        left: 0;
+        background: #333; /* Change color for visibility */
+        width: 100%;
+        display: none; /* Hide by default and show on menu button click */
+    }
+    header ul li {
+        display: block; /* Stack the menu items vertically */
+        margin-right: 0; /* Adjust margins for mobile layout */
+        text-align: center; /* Center align the menu items */
+    }
 }
-
+@media only screen and (max-width: 750px){
+    .content, .post-slider .post-wrapper {
+        width: 100%; /* Use full width for mobile devices */
+        margin: 20px 0; /* Adjust margins for spacing */
+    }
+    .post-slider .post-wrapper .post, .content .main-content .post {
+        width: auto; /* Make post width responsive */
+        margin: 10px; /* Adjust for mobile spacing */
+    }
+}
+@media only screen and (max-width: 750px){
+    .btn, .post-slider .next, .post-slider .prev, header ul li a {
+        font-size: medium; /* Adjust button and link sizes for easier interaction */
+    }
+    .content, .flashcard, .footer .footer-content .footer-section {
+        padding: 5px; /* Adjust padding for text boxes, flashcards, and footer sections */
+    }
+}
 
 /* ReadMore Button*/
 .btn{
