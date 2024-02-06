@@ -31,20 +31,12 @@ header .logo{
     float: left;
 }
 
-header .logo img{
-    width: 80px; /* Example width - you can set this to whatever suits your design */
+header .logo img.header-logo {
+    width: 150px; /* or any size that fits well in your header */
     height: auto;
-    /* You can also add margin or padding if needed to align it within the header */
-    margin-right: 10px; /* Adjust as needed */
-    vertical-align: middle; /* This ensures it aligns well with any text or inline elements */
-}
-
-
-header .logo-text{
-    display: inline-block; /* Align with the logo image */
-    vertical-align: middle; /* Align vertically */
-    /* ... rest of your .logo-text styles ... */
-    
+    margin-right: 10px; 
+    vertical-align: middle; 
+    /* Additional styles if needed */
 }
 
 header ul{
@@ -301,16 +293,12 @@ color: black;
     position: relative;
 }
 
-.footer .logo{
-    float: left; 
-}
-
-.footer .logo img{
-    width: 80px; /* Example width - you can set this to whatever suits your design */
+.footer .footer-section img.footer-logo {
+    width: 80px; /* smaller size for the footer */
     height: auto;
-    /* You can also add margin or padding if needed to align it within the header */
-    margin-right: 10px; /* Adjust as needed */
-    vertical-align: middle; /* This ensures it aligns well with any text or inline elements */
+    margin-right: 10px; 
+    vertical-align: middle; 
+    /* Additional styles if needed */
 }
 
 .footer .footer-content{
