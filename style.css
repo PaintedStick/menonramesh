@@ -301,6 +301,18 @@ color: black;
     position: relative;
 }
 
+.footer .logo{
+    float: left; 
+}
+
+.footer .logo img{
+    width: 80px; /* Example width - you can set this to whatever suits your design */
+    height: auto;
+    /* You can also add margin or padding if needed to align it within the header */
+    margin-right: 10px; /* Adjust as needed */
+    vertical-align: middle; /* This ensures it aligns well with any text or inline elements */
+}
+
 .footer .footer-content{
     height: 280px;
     display: flex;
