@@ -16,8 +16,12 @@ body {
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: black;
     height: 95px;
+    padding: 0 20px;
 }
 
 a{
@@ -28,7 +32,8 @@ a{
 
 
 header .logo{
-    float: left;
+    display: flex;
+    align-items: center;
 }
 
 header .logo img.header-logo {
@@ -40,14 +45,17 @@ header .logo img.header-logo {
 }
 
 header ul{
+    display: flex
+    align-items: center;
+    list-size: none;
     font-size: 25px;
-    float: right;
     margin: 5px;
     padding: 30px;
     list-style: none;
 }
 
 header ul li{
+    padding: 0 20px;
     float: left;
     margin-right: 20px;
 }
@@ -288,6 +296,7 @@ color: black;
 .footer{
     margin-top: 100px;
     background: black;
+    padding: 0 20px;
     color:black;
     height: 320px;
     position: relative;
@@ -296,12 +305,16 @@ color: black;
 .footer .footer-section img.footer-logo {
     width: 80px; /* smaller size for the footer */
     height: auto;
-    margin-right: 10px; 
+    margin-bottom: 10px; 
     vertical-align: middle; 
     /* Additional styles if needed */
 }
 
 .footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     height: 280px;
     display: flex;
     color: white;
@@ -316,9 +329,10 @@ color: black;
     width: 100%;
 }
 
-.footer .footer-content .footer-section{
+.footer .footer-content .footer-section img{
     flex: 1;
     padding: 25px;
+    margin-bottom: 20px;
 }
 
 .footer .footer-content .about h1{
@@ -331,7 +345,7 @@ color: black;
 }
 
 .footer .footer-content .about .contact span{
-     display:block;
+     display: block;
      margin: 3px;
      font-size:1.1em;
      margin-bottom: 2px;
